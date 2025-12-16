@@ -1,18 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>Test t-dev3からa25109teへgit config変更</title>
-</head>
-<body>
-    <h1>Hello!</h1>
-    <p>これは t-dev3/a25109teのテストページです。</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>サクラカフェ＆レストラン 池袋</title>
+        <style>
+            body{
+                margin:0;
+                font-family:system-ui,"Noto Sans JP",sans-serif;
+                background:#f6f7fb;
+                color:#111;
+            }
+            .wrap{
+                max-width:900px;
+                margin:40px auto;
+                padding:0 16px;
+            }
+            .card{
+                background:#fff;
+                border:1px solid #e6e8f0;
+                border-radius:14px;
+                overflow:hidden;
+                box-shadow:0 8px 24px rgba(0,0,0,.06);
+            }
+            .hero{
+                width:100%;
+                height:300px;
+                object-fit:cover;
+                display:block;
+                background:#ddd;
+            }
+            .body{
+                padding:18px;
+            }
+            .tag{
+                display:inline-block;
+                font-size:12px;
+                padding:4px 10px;
+                border:1px solid #e6e8f0;
+                border-radius:999px;
+                color:#555;
+            }
+            h1{
+                font-size:22px;
+                margin:10px 0 6px;
+            }
+            .sub{
+                margin:0 0 12px;
+                color:#555;
+                line-height:1.7;
+            }
+            .btn{
+                display:inline-block;
+                margin-top:12px;
+                padding:10px 12px;
+                border-radius:10px;
+                border:1px solid #e6e8f0;
+                background:#111;
+                color:#fff;
+                text-decoration:none;
+            }
+            h2{
+                font-size:16px;
+                margin:18px 0 10px;
+            }
+            .grid{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:10px;
+            }
+            .grid img{
+                width:100%;
+                height:170px;
+                object-fit:cover;
+                border-radius:12px;
+                border:1px solid #e6e8f0;
+                background:#eee;
+                display:block;
+            }
+            @media (max-width:720px){
+                .grid{
+                    grid-template-columns:1fr;
+                }
+                .grid img{
+                    height:230px;
+                }
+            }
+            .meta{
+                font-size:12px;
+                color:#666;
+                margin-top:10px;
+                line-height:1.6;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="card">
+                <img class="hero"
+                     src="t-dev_images/shop.jpg"
+                     alt="サクラカフェ＆レストラン 池袋（店舗イメージ）" />
 
-    <h2>動作確認用の情報</h2>
-    <ul>
-      <li>このファイル名: <strong>t-dev3.html</strong></li>
-      <li>配置場所: リポジトリのルート（README.mdと同じ階層）</li>
-      <li>もしこの文章が見えていれば、GitHub Pages の設定は成功です 🎉</li>
-    </ul>
-</body>
+                <div class="body">
+                    <span class="tag">池袋駅 / カフェ＆レストラン</span>
+                    <h1>サクラカフェ＆レストラン 池袋</h1>
+
+                    <p class="sub">
+                        いちばんの魅力は、「世界のいろいろな国の料理を、気軽に楽しめる」こと。
+                        友人同士の食事から、ちょっとした集まりまで“みんなの好みが違っても選びやすい”お店としておすすめです！
+                    </p>
+                    <ul>
+                        <li>多国籍な料理をテーマにしたメニューで、食べたことのない料理を味わえる</li>
+                        <li>初めてでも入りやすい雰囲気で、食事メインでも使いやすい</li>
+                        <li>様々な国のビールが飲める</li>
+                    </ul>
+
+                    <a class="btn"
+                       href="https://tabelog.com/tokyo/A1305/A130501/13057144/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        食べログで最新情報を見る
+                    </a>
+
+                    <h2>料理イメージ</h2>
+                    <div class="grid">
+                        <img src="t-dev_images/food1.jpg" alt="料理イメージ1" />
+                        <img src="t-dev_images/food2.jpg" alt="料理イメージ2" />
+                        <img src="t-dev_images/food3.jpg" alt="料理イメージ3" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
