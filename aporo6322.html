@@ -1,1 +1,101 @@
-Hello HTML!
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>蜂谷のおすすめ飲食店</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .shop-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .shop {
+      background: #ffffff;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .shop img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background: #f0f0f0;
+      display: block;
+    }
+
+    .shop-content {
+      padding: 15px;
+    }
+
+    .shop h2 {
+      margin: 0 0 8px;
+    }
+
+    .shop p {
+      margin: 6px 0;
+      color: #555;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0e0e0;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1><em>Hachiya's Recommended Restaurants</em></h1>
+
+<div class="shop-list">
+
+  <div class="shop">
+    <img src="images/bondy_image.jpg" alt="欧風カレーボンディ">
+    <div class="shop-content">
+      <h2>欧風カレー ボンディ 神保町本店</h2>
+      <p>欧風カレーといえばここ！付け合わせのじゃがいもや漬物まで美味しい。いつも大行列。</p>
+      <p>
+        <span class="tag">カレー</span>
+        <span class="tag">オシャレ</span>
+        <span class="tag">アルコールあり</span>
+      </p>
+      <p>📍東京都千代田区神田神保町2-3 神田古書センター ２Ｆ</p>
+      <p>⏰平日：11:00〜22:00　土日祝日：10:00～22:00　</p>
+      <p>🥢<a href="https://tabelog.com/tokyo/A1310/A131003/13000439/"> 食べログサイト</a></p>
+    </div>
+  </div>
+
+  <div class="shop">
+    <img src="images/karamen.png" alt="桝元辛麺">
+    <div class="shop-content">
+      <h2>辛麺屋 桝元 ラゾーナ川崎プラザ店</h2>
+      <p>宮崎県発祥のソウルフード！辛いだけじゃない旨さ。こんにゃく麺が断然オススメ。</p>
+      <p>
+        <span class="tag">辛麺</span>
+        <span class="tag">カジュアル</span>
+        <span class="tag">一人でも可</span>
+      </p>
+      <p>📍神奈川県川崎市幸区堀川町72-1 ラゾーナ川崎プラザ 4F</p>
+      <p>⏰11:00〜22:00</p>
+      <p>🥢<a href="https://tabelog.com/kanagawa/A1405/A140501/14083048/"> 食べログサイト</a></p>
+    </div>
+  </div>
+
+
+</body>
+</html>
