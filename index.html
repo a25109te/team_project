@@ -1,15 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Our Project</title>
-</head>
-<body>
-  <h1>Hello GitHub Pages!</h1>
-  <p>これは our_project の GitHub Pages テストページです。</p>
-  <a href="t-dev3.html">t-dev3のWebページ</a>
-  <a href="koshiba.html">koshibaのWebページ</a>
-  <a href="aporo6322.html">蜂谷のWebページ</a>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>おすすめレストラン紹介</title>
+        <style>
+            body{
+                font-family: system-ui, "Noto Sans JP", sans-serif;
+                margin: 0;
+                background: #fff7ed;
+                color: #3b2f2a;
+            }
+            main{
+                max-width: 720px;
+                margin: 40px auto;
+                padding: 0 16px;
+            }
+            h1{
+                margin: 0 0 8px;
+                font-size: 22px;
+            }
+            p{
+                margin: 0 0 16px;
+                color: #6b4f44;
+                line-height: 1.6;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 10px;
+            }
+            a{
+                display: block;
+                padding: 12px 14px;
+                background: #ffffff;
+                border: 1px solid #f2c3a0;
+                border-radius: 12px;
+                text-decoration: none;
+                color: #3b2f2a;
+                box-shadow: 0 6px 18px rgba(120, 72, 48, 0.10);
+            }
+            a:hover{
+                background: #fff1e6;
+                border-color: #f29d63;
+            }
+            footer{
+                max-width: 720px;
+                margin: 24px auto 40px;
+                padding: 0 16px;
+                font-size: 12px;
+                color: #7a5b4d;
+            }
+            .badge{
+                display: inline-block;
+                font-size: 12px;
+                padding: 4px 10px;
+                border-radius: 999px;
+                background: #ffedd5;
+                border: 1px solid #f2c3a0;
+                color: #7a3e2b;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>おすすめレストラン紹介</h1>
+            <p>メンバーが作成したおすすめレストラン紹介ページへ移動できます。</p>
 
+            <nav aria-label="おすすめレストラン一覧">
+                <ul>
+                    <li>
+                        <a href="t-dev3.html">eriのおすすめレストラン</a>
+                    </li>
+                    <li>
+                        <a href="koshiba.html">koshibaのおすすめレストラン</a>
+                    </li>
+                    <li>
+                        <a href="aporo6322.html">hachiyaのおすすめレストラン</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+
+        <footer>
+        </footer>
+    </body>
 </html>
