@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry&Cafe SAMA - スープカレー専門店</title>
+    <link rel="stylesheet" href="koshiba.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+			<div>
+            <h1 class="logo">  <img src="img/sama.png" class="logo-img" alt="">Curry&Cafe SAMA</h1>
+			  </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">SAMAについて</a></li>
+                    <li><a href="#concept">コンセプト</a></li>
+                    <li><a href="#menu">メニュー</a></li>
+                    <li><a href="#shops">店舗情報</a></li>
+                    <li><a href="#online">オンラインショップ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2 class="hero-title">スープカレーを<br>日本の食文化に</h2>
+                <p class="hero-text">北海道から全国へ、こだわりのスープカレーをお届けします</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+    </section>
+
+    <section id="concept" class="section concept">
+        <div class="container">
+            <h2 class="section-title">コンセプト</h2>
+            <div class="concept-grid">
+                <div class="concept-card">
+                    <div class="concept-icon">🍛</div>
+                    <h3>本格スープカレー</h3>
+                    <p>北海道の伝統を守りながら、独自の製法で作り上げた深い味わいのスープカレー</p>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-icon">🌟</div>
+                    <h3>こだわりの食材</h3>
+                    <p>新鮮な野菜、厳選した肉類、季節の食材を使用した月替わりメニュー</p>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-icon">❤️</div>
+                    <h3>社員は家族</h3>
+                    <p>スタッフ一人ひとりを大切にし、温かいおもてなしの心でお客様をお迎えします</p>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-icon">🌏</div>
+                    <h3>全国展開</h3>
+                    <p>北海道から東京まで、日本全国にスープカレーの美味しさを届けます</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2 class="section-title">メニュー</h2>
+            <p class="section-subtitle">毎月変わる限定メニュー「マンスリーカレー」も要チェック！</p>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="menu-placeholder">チキンカレー</div>
+                    </div>
+                    <h3 class="menu-name">チキンスープカレー</h3>
+                    <p class="menu-description">
+                        柔らかく煮込んだチキンレッグと新鮮野菜たっぷりの定番メニュー
+                    </p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="menu-placeholder">ラムカレー</div>
+                    </div>
+                    <h3 class="menu-name">ラムスープカレー</h3>
+                    <p class="menu-description">
+                        北海道産ラム肉を使用した、香り高い大人のスープカレー
+                    </p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="menu-placeholder">和牛カレー</div>
+                    </div>
+                    <h3 class="menu-name">和牛スープカレー</h3>
+                    <p class="menu-description">
+                        厳選和牛をじっくり煮込んだ贅沢な一品
+                    </p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="menu-placeholder">ホタテカレー</div>
+                    </div>
+                    <h3 class="menu-name">ホタテスープカレー</h3>
+                    <p class="menu-description">
+                        北海道産ホタテの旨みが凝縮されたシーフードカレー
+                    </p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="menu-placeholder">野菜カレー</div>
+                    </div>
+                    <h3 class="menu-name">季節の野菜カレー</h3>
+                    <p class="menu-description">
+                        旬の野菜をたっぷり使用したヘルシーなスープカレー
+                    </p>
+                </div>
+
+                <div class="menu-item featured">
+                    <div class="menu-badge">限定</div>
+                    <div class="menu-image">
+                        <div class="menu-placeholder">マンスリーカレー</div>
+                    </div>
+                    <h3 class="menu-name">マンスリーカレー</h3>
+                    <p class="menu-description">
+                        毎月変わる限定メニュー。季節の食材を使った創作スープカレー
+                    </p>
+                </div>
+            </div>
+
+            <div class="spice-level">
+                <h3>辛さレベル</h3>
+                <div class="spice-options">
+                    <div class="spice-option">
+                        <span class="spice-number">1</span>
+                        <span class="spice-name">マイルド</span>
+						<button popovertarget="mypopover">ポップオーバーの切り替え</button>
+<div id="mypopover" popover>ポップオーバーコンテンツ</div>
+                    </div>
+                    <div class="spice-option">
+                        <span class="spice-number">2</span>
+                        <span class="spice-name">レギュラー</span>
+                    </div>
+                    <div class="spice-option">
+                        <span class="spice-number">3</span>
+                        <span class="spice-name">ミドル</span>
+                    </div>
+                    <div class="spice-option">
+                        <span class="spice-number">4</span>
+                        <span class="spice-name">ホット</span>
+                    </div>
+                    <div class="spice-option">
+                        <span class="spice-number">5</span>
+                        <span class="spice-name">激辛</span>
+                    </div>
+                </div>
+                <p class="spice-note">お好みの辛さをお選びいただけます</p>
+				<p class="spice-note">辛さは1～<span class="red">30</span>まで選ぶことができます</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="shops" class="section shops">
+        <div class="container">
+            <h2 class="section-title">店舗情報</h2>
+            <p class="section-subtitle">北海道から東京まで、全国15店舗以上で展開中</p>
+
+            <div class="shops-grid">
+                <div class="shop-area">
+                    <h3 class="area-title">札幌エリア</h3>
+                    <ul class="shop-list">
+                        <li>大谷地総本店</li>
+                        <li>札幌大通店</li>
+                        <li>北海道神宮前店</li>
+                        <li>その他4店舗</li>
+                    </ul>
+                </div>
+
+                <div class="shop-area">
+                    <h3 class="area-title">北海道各地</h3>
+                    <ul class="shop-list">
+                        <li>旭川店</li>
+                        <li>帯広店</li>
+                        <li>北見店</li>
+                        <li>釧路店</li>
+                    </ul>
+                </div>
+
+                <div class="shop-area">
+                    <h3 class="area-title">東京エリア</h3>
+                    <ul class="shop-list">
+                        <li>明治神宮店</li>
+						<li>神田店</li>
+						<li>下北沢店</li>
+                    </ul>
+                </div>
+
+                <div class="shop-area">
+                    <h3 class="area-title">パートナー店</h3>
+                    <ul class="shop-list">
+                        <li>全国14店舗以上</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <h3>デリバリーサービス</h3>
+                <p>一部店舗では、各種フードデリバリーサービスに対応しています。<br>詳しくは各店舗にお問い合わせください。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="online" class="section online">
+        <div class="container">
+            <div class="online-content">
+                <h2 class="section-title">オンラインショップ</h2>
+                <p class="online-text">
+                    ご自宅でもSAMAのスープカレーをお楽しみいただけます。<br>
+                    冷凍スープカレーやレトルトカレー、オリジナルグッズなど、<br>
+                    様々な商品をオンラインショップでご購入いただけます。
+                </p>
+                <div class="online-button">
+                    <a href="https://sama-online-shop.com" target="_blank" rel="noopener" class="btn">オンラインショップへ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Curry&Cafe SAMA</h3>
+                    <p>スープカレーを日本の食文化に</p>
+                </div>
+                <div class="footer-links">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="https://hb-sama.com/" target="_blank" rel="noopener">公式サイト</a></li>
+                        <li><a href="https://sama-online-shop.com" target="_blank" rel="noopener">オンラインショップ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>ミッション</h4>
+                    <p>社員は、家族</p>
+                    <p>お客様に最高の体験を</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Curry&Cafe SAMA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+	<script>
+
+	</script>
+</body>
+</html>
