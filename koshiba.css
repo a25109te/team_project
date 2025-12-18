@@ -640,3 +640,56 @@ body {
 .red {
 	color: red;
 }
+
+
+.popover-button {
+  color: #fff;
+  background-color: #eb6100;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 120px;
+  text-align: center;
+}
+.popover-button:hover {
+  color: #fff;
+  background: #f56500;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+[popover] {
+  background: #fff;
+  border: 2px solid #eb6100;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #333;
+  max-width: 300px;
+  line-height: 1.5;
+  margin: 0;
+  position: absolute;
+  inset: unset;
+}
+
+#mypopover-1 { position-anchor: --button-1; }
+#mypopover-2 { position-anchor: --button-2; }
+#mypopover-3 { position-anchor: --button-3; }
+#mypopover-4 { position-anchor: --button-4; }
+#mypopover-5 { position-anchor: --button-5; }
+
+#button-1 { anchor-name: --button-1; }
+#button-2 { anchor-name: --button-2; }
+#button-3 { anchor-name: --button-3; }
+#button-4 { anchor-name: --button-4; }
+#button-5 { anchor-name: --button-5; }
+
+[popover]:popover-open {
+  top: anchor(bottom);
+  left: anchor(center);
+  translate: -50% 10px;
+}
