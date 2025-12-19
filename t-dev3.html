@@ -8,8 +8,8 @@
             body{
                 margin:0;
                 font-family:system-ui,"Noto Sans JP",sans-serif;
-                background:#f6f7fb;
-                color:#111;
+                background:#fff7ed;
+                color:#3b2f2a;
             }
             .wrap{
                 max-width:900px;
@@ -17,11 +17,11 @@
                 padding:0 16px;
             }
             .card{
-                background:#fff;
-                border:1px solid #e6e8f0;
+                background:#ffffff;
+                border:1px solid #f2c3a0;
                 border-radius:14px;
                 overflow:hidden;
-                box-shadow:0 8px 24px rgba(0,0,0,.06);
+                box-shadow:0 8px 22px rgba(120, 72, 48, 0.12);
             }
             .hero{
                 width:100%;
@@ -33,50 +33,62 @@
             .body{
                 padding:18px;
             }
-            .tag{
-                display:inline-block;
-                font-size:12px;
-                padding:4px 10px;
-                border:1px solid #e6e8f0;
-                border-radius:999px;
-                color:#555;
-            }
             h1{
                 font-size:22px;
                 margin:10px 0 6px;
             }
             .sub{
                 margin:0 0 12px;
-                color:#555;
+                color:#6b4f44;
                 line-height:1.7;
+            }
+            ul{
+                margin:0 0 12px;
+                padding-left:20px;
+                color:#6b4f44;
+                line-height:1.6;
             }
             .btn{
                 display:inline-block;
                 margin-top:12px;
-                padding:10px 12px;
+                padding:10px 14px;
                 border-radius:10px;
-                border:1px solid #e6e8f0;
-                background:#111;
-                color:#fff;
+                border:1px solid #f2c3a0;
+                background:#ffffff;
+                color:#3b2f2a;
                 text-decoration:none;
+                box-shadow:0 4px 14px rgba(120, 72, 48, 0.12);
+            }
+            .btn:hover{
+                background:#fff1e6;
+                border-color:#f29d63;
             }
             h2{
                 font-size:16px;
-                margin:18px 0 10px;
+                margin:20px 0 10px;
             }
             .grid{
                 display:grid;
                 grid-template-columns:repeat(3,1fr);
-                gap:10px;
+                gap:12px;
+            }
+            .food{
+                margin:0;
             }
             .grid img{
                 width:100%;
                 height:170px;
                 object-fit:cover;
                 border-radius:12px;
-                border:1px solid #e6e8f0;
+                border:1px solid #f2c3a0;
                 background:#eee;
                 display:block;
+            }
+            .food figcaption{
+                margin-top:6px;
+                font-size:13px;
+                color:#6b4f44;
+                text-align:center;
             }
             @media (max-width:720px){
                 .grid{
@@ -85,12 +97,6 @@
                 .grid img{
                     height:230px;
                 }
-            }
-            .meta{
-                font-size:12px;
-                color:#666;
-                margin-top:10px;
-                line-height:1.6;
             }
         </style>
     </head>
@@ -102,13 +108,14 @@
                      alt="サクラカフェ＆レストラン 池袋（店舗イメージ）" />
 
                 <div class="body">
-                    <span class="tag">池袋駅 / カフェ＆レストラン</span>
                     <h1>サクラカフェ＆レストラン 池袋</h1>
 
                     <p class="sub">
                         いちばんの魅力は、「世界のいろいろな国の料理を、気軽に楽しめる」こと。
-                        友人同士の食事から、ちょっとした集まりまで“みんなの好みが違っても選びやすい”お店としておすすめです！
+                        友人同士の食事から、ちょっとした集まりまで
+                        “みんなの好みが違っても選びやすい”お店としておすすめです。
                     </p>
+
                     <ul>
                         <li>多国籍な料理をテーマにしたメニューで、食べたことのない料理を味わえる</li>
                         <li>初めてでも入りやすい雰囲気で、食事メインでも使いやすい</li>
@@ -124,9 +131,23 @@
 
                     <h2>料理の写真</h2>
                     <div class="grid">
-                        <img src="t-dev_images/food1.jpg" alt="料理イメージ1" />
-                        <img src="t-dev_images/food2.jpg" alt="料理イメージ2" />
-                        <img src="t-dev_images/food3.jpg" alt="料理イメージ3" />
+                        <figure class="food">
+                            <img src="t-dev_images/food1.jpg"
+                                 alt="サバサンド（トルコ料理）" />
+                            <figcaption>サバサンド（トルコ料理）</figcaption>
+                        </figure>
+
+                        <figure class="food">
+                            <img src="t-dev_images/food2.jpg"
+                                 alt="ロモ・サルタード（ペルー料理）" />
+                            <figcaption>ロモ・サルタード（ペルー料理）</figcaption>
+                        </figure>
+
+                        <figure class="food">
+                            <img src="t-dev_images/food3.jpg"
+                                 alt="パリセジーニャ（ポルトガル料理）" />
+                            <figcaption>パリセジーニャ（ポルトガル料理）</figcaption>
+                        </figure>
                     </div>
 
                 </div>
